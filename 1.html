@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #head{
+            text-align: center;
+            background-color: rgb(170, 237, 170);
+        }
+        #logo{
+            width: 250px;
+            height: auto;
+        }
+        #menu{
+            background-color: rgba(6, 181, 6, 0.753);
+            text-align: center;
+        }
+        li{
+            list-style: none;
+            display: inline-block;
+            padding: 18px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            font-size: 24px;
+        }
+
+        .container{
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+            padding: 16px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .sticky{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header id="head">
+
+        <img src="../photos/discortG.png" alt="hello" id="logo">
+    </header>
+    
+    <nav id="menu">
+        <li>Home</li>
+        <li>About us</li>
+        <li>Services</li>
+        <li>Contact us</li>
+    </nav>
+    
+    <div class="container ">
+
+        <h1>About</h1>
+        <img src="../photos/team.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ullam id soluta aspernatur excepturi, impedit illum quasi similique nulla, officiis voluptas reprehenderit consequatur facere odit quam magni expedita minus quo. Quibusdam totam ipsa id, ut a dolor unde! Facere accusantium, praesentium pariatur rerum cum delectus excepturi alias deleniti aut eum iure possimus quidem quasi atque maxime ut repudiandae! Pariatur mollitia natus accusamus nesciunt suscipit, sequi consequuntur, laudantium dolore aperiam sint voluptatem dolorum reiciendis eaque maiores explicabo quasi odit at perferendis quam deleniti iure possimus. Dolorum autem quaerat modi temporibus maxime enim minus esse aliquid, natus tempora assumenda nostrum. Sequi totam veniam cum placeat, dicta blanditiis harum. Amet vitae asperiores labore accusantium nulla architecto omnis nam, in expedita pariatur recusandae minima nisi saepe quos assumenda doloremque veniam provident natus atque, explicabo ea quam. Non beatae recusandae eius commodi ipsum, odio unde nostrum laborum explicabo quos, fugit dignissimos dolore. Vel eveniet impedit explicabo blanditiis sint aperiam velit accusantium quas illum accusamus repellendus, alias beatae officiis temporibus quod! Fugiat qui, rem molestiae eligendi a nihil vel maxime aperiam maiores odio voluptatum repellendus reprehenderit ipsa quae debitis adipisci veritatis? Illo, consectetur minus? Atque, minima! Totam, a magni? Reprehenderit cum consequatur quos error maiores accusamus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptate molestiae fugit cumque, laboriosam ipsum libero quis beatae sed repudiandae nobis rerum quam. Magnam eos debitis animi, quia a ullam doloribus ad quasi voluptas porro iure iusto maiores quis nihil odit eum perspiciatis, similique voluptatum! Aut, officia. Earum quaerat impedit voluptates error reprehenderit natus eveniet sunt enim laudantium esse? Id, fugiat. Ipsum earum sapiente quod aliquid, esse sint commodi voluptate, vitae sequi impedit quasi voluptas quidem officia! Modi eligendi velit autem omnis atque. Animi aspernatur asperiores at, tempore perferendis, eveniet earum expedita adipisci molestiae ipsum nesciunt. Placeat asperiores animi adipisci.
+        </p>
+    </div>
+
+    <script>
+        window.addEventListener('scroll',function(){
+            let nav=document.getElementById("menu");
+            
+            if(window.pageYOffset >=190){
+                nav.classList.add('sticky');
+            }else{
+                nav.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+</html>

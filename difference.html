@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 40vh;
+        }
+        button{
+            cursor: pointer;
+        }
+    </style>
+  
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="container">
+
+        <span onclick="back()" id="btn"> check me</span>
+    </div>
+   
+  
+  <script>
+        let a=document.getElementById('container');
+        function back(){
+        //    a.innerHTML="<b>hello my</b>";
+           a.innerText="<b>hello my </b>";
+        }
+    </script>
+</body>
+</html>
